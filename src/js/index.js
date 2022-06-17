@@ -5,6 +5,9 @@ window.addEventListener('load', () => {
     if (screen.height > screen.width) {
         board.style.display = 'none'
         turnAlert.style.display = 'flex'
+    } else {
+        board.style.display = 'flex'
+        turnAlert.style.display = 'none'
     }
 })
 
