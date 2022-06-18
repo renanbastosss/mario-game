@@ -2,13 +2,14 @@ const turnAlert = document.querySelector('.alert')
 const board = document.querySelector('.game-board')
 
 window.addEventListener('load', () => {
-    if (screen.height < screen.width) {
-        board.style.display = 'block'
-        turnAlert.style.display = 'none'
-    } else {
+    if (screen.height > screen.width) {
         board.style.display = 'none'
         turnAlert.style.display = 'flex'
+        return
     }
+
+    board.style.display = 'block'
+    turnAlert.style.display = 'none'
 })
 
 
